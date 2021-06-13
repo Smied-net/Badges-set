@@ -4,6 +4,8 @@
 
 [Badges set](https://github.com/Smied-net/Badges-set) - is an open source project.
 
+![visitors](https://visitor-badge.glitch.me/badge?page_id=Smied-net.Badges-set/)
+
 **Smied.net links:**
 
 [Website](https://Smied.net/) | [Documentation]() | [Feedback](https://Feedback.Smied.net/)
