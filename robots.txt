@@ -1,0 +1,11 @@
+#Setting up search engine indexing
+#To restrict access rights, you need to edit hidden file in root of site .htaccess
+
+User-agent: *
+Allow: /
+Disallow: /upload
+Sitemap: sitemap.xml
+Host: smied-net.github.io
+
+User-agent: python
+Disallow: /

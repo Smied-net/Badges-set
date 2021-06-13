@@ -1,0 +1,83 @@
+RewriteEngine On
+RewriteBase /
+
+#############################
+# Close viewing directories #
+#############################
+Options All -Indexes
+
+##############################
+# Close file access  #
+##############################
+
+#########
+# by id #
+#########
+<Files ~ "\.(txt|log)$">
+    Deny from all
+</Files>
+
+############
+# by names #
+############
+<Files "Readme.txt">
+order allow,deny
+deny from all
+</Files>
+
+###################
+# Default handler #
+###################
+DirectoryIndex index.php index.html index.htm
+
+#################
+# http -> https #
+#################
+#RewriteCond %{SERVER_PORT} !^443$
+#RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
+##################
+# Enable use UTM #
+##################
+#RewriteCond %{REQUEST_URI} !^public
+#RewriteRule ^(.*)$ public/$1 [L]
+
+##################
+#  Error pages   #
+##################
+#ErrorDocument 404 /404.php
+#ErrorDocument 403 /403.php
+
+##############################
+# Ban on access to the site  #
+##############################
+
+############
+# Ban bots #
+############
+
+# Variables
+SetEnvIfNoCase User-Agent "python" bad_bot
+
+# UniversalRules
+SetEnvIfNoCase User-Agent ^$           bad_bot
+SetEnvIfNoCase User-Agent .*\@.*       bad_bot
+SetEnvIfNoCase User-Agent .*bot.*      bad_bot
+
+# Goodbots
+SetEnvIfNoCase User-Agent .*google.*  !bad_bot
+SetEnvIfNoCase User-Agent .*bingbot.* !bad_bot
+SetEnvIfNoCase User-Agent .*yandex.*  !bad_bot
+
+# Blocking
+<Limit GET POST HEAD>
+Order Allow,Deny
+Allow from all
+Deny from env=bad_bot
+
+############
+# Ban ip   #
+############
+
+Deny from 1.2.3.4
+Deny from 1.2.3.5

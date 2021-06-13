@@ -1,0 +1,45 @@
+{
+    "name": "Badges set",
+    "short_name": "Badges set",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "description": "Badges set",
+    "icons": [{
+      "src": "core/images/favicon/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/ico"
+    }, {
+      "src": "core/images/favicon/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }, {
+      "src": "core/images/favicon/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }, {
+      "src": "core/images/favicon/favicon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }, {
+      "src": "core/images/favicon/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }, {
+      "src": "core/images/favicon/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }],
+    "prefer_related_applications": false,
+    "related_applications": [{
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.app",
+      "id": "com.app"
+      }, {
+      "platform": "itunes",
+      "url": "https://itunes.apple.com/app/example-app1/id1",
+      "id": "1"
+    }]
+}
+  

@@ -1,0 +1,182 @@
+/*
+index.css
+*/
+
+/*
+Footer
+*/
+          
+/* Background */
+.page-footer {
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative; }
+
+/* 1 Group Badges */
+.footer-btn-warp .btn-set-group {
+  display: inline-block;
+  vertical-align: top; }
+
+/* 2 Group Badges */
+.footer-btn-warp .btn-appstore .bt-group-2 a.site-btn {
+  padding-right: 10px !important; }
+
+.footer-btn-warp .btn-appstore .bt-group-2 a.site-btn svg, .footer-btn-warp .btn-appstore .bt-group-2 a.site-btn img {
+  padding-right: 0 !important;
+  margin-right: 0 !important; }
+
+/*
+Badges
+*/
+
+/* Center */
+.align-content-center {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center; }
+
+.align-content-center {
+  align-content: center !important; }
+
+/* Text */
+.footer-btn-warp .btn-appstore a.site-btn {
+  font-size: 14px !important;
+  color: #fff !important;
+  margin-left: 3px !important;
+  margin-right: 3px !important;
+  font-weight: normal !important;
+  padding-right: 14px !important; }
+    
+/* Background */
+.btn-dark {
+  background-color: #000000;
+  border-color: #1864b1; }
+
+/* Border */
+.btn-dark:hover {
+  color: #fff;
+  background-color: #075377;
+  border-color: #241d1d; }
+
+/* Other */
+.footer-btn-warp .btn-appstore a.site-btn.amazonLink img{
+  margin-right: 0 !important;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none; }
+
+.site-btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
+  @media (prefers-reduced-motion: reduce) {
+  .site-btn {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none; } }
+
+.btn-appstore .site-btn {
+  font-family: 'Roboto', sans-serif !important;
+  border-radius: 12px !important;
+  padding: .45rem 10px !important;
+  line-height: 20px !important;
+  text-decoration: none  !important;
+  padding-right: 14px !important; }
+  @media (max-width: 991px) {
+    .btn-appstore a,
+    .btn-appstore .site-btn {
+      padding-right: 10px !important; } }
+  .btn-appstore a img,
+  .btn-appstore .site-btn img {
+    margin-right: 8px !important; }
+
+.btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active,
+.show > .btn-dark.dropdown-toggle {
+  color: #fff;
+  background-color: #1d2124;
+  border-color: #171a1d; }
+  
+.btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus,
+.show > .btn-dark.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5); }
+
+/* App Store badges to center */
+
+.btn-appstore a,
+.btn-appstore .site-btn {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 12px !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  border-radius: 12px !important;
+  padding: .45rem 10px !important;
+  line-height: 20px !important;
+  text-decoration: none  !important;
+  padding-right: 14px !important; }
+  @media (max-width: 991px) {
+    .btn-appstore a,
+    .btn-appstore .site-btn {
+      padding-right: 10px !important; } }
+  .btn-appstore a img,
+  .btn-appstore .site-btn img {
+    margin-right: 8px !important; }
+    @media (max-width: 991px) {
+      .btn-appstore a img,
+      .btn-appstore .site-btn img {
+        margin-right: 2px !important; } }
+
+@media (max-width: 992px) {
+  .btn-appstore a, .btn-appstore .site-btn{
+    padding: .45rem 5px !important;
+    margin-bottom: 3px;
+    margin-left: 0 !important;
+  }
+  .footer-btn-warp .btn-appstore a.site-btn span{
+    display: none;
+  }
+}
+
+/* Mobile */
+.langbox.show .lang-select {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+.langbox.show .lang-select:after {
+  -webkit-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg); }
+@media (max-width: 992px) {
+  .footer-btn-warp{
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 992px) {
+  .btn-appstore a, .btn-appstore .site-btn{
+    padding: .45rem 5px !important;
+    margin-bottom: 3px;
+    margin-left: 0 !important;
+  }
+  .footer-btn-warp .btn-appstore a.site-btn{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-right: 5px !important;
+  }
+  .footer-btn-warp .btn-appstore .bt-group-2 a.site-btn{
+    padding-right: 5px !important;
+  }
+    /* Hide text for mobile */
+  .footer-btn-warp .btn-appstore a.site-btn span{
+    display: none;
+  }
+}
+

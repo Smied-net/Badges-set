@@ -1,0 +1,14 @@
+<!-- SiteMap -->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://smied-net.github.io/Badges-set/Badges.html/</loc>
+  <lastmod>2021-06-12T21:07:05+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+	<priority>1.0</priority>
+</url>
+</urlset>
