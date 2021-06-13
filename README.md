@@ -18,7 +18,7 @@
 
 # Demo
 
-[Demo](https://smied-net.github.io/Badges-set/Badges.html)
+[Demo](https://smied-net.github.io/Badges-set/index.html)
 
 # Customization
 
